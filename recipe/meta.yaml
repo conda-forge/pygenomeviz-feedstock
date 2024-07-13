@@ -1,5 +1,5 @@
 {% set name = "pygenomeviz" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygenomeviz-{{ version }}.tar.gz
-  sha256: 08bb1597c4b21f7fe7ba0c0ea7cb63f9309e8e0cdcccfce4592955caabdc31c7
+  sha256: bedfe310000d8264c7f5cd027a8bb17b7f5ed49b500a0b4c6d6520f0dcc32710
 
 build:
   entry_points:
@@ -24,7 +24,7 @@ build:
 requirements:
   host:
     - python >=3.8
-    - poetry-core >=1.0.0
+    - hatchling
     - pip
   run:
     - python >=3.8
