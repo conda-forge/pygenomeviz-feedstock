@@ -1,5 +1,5 @@
 {% set name = "pygenomeviz" %}
-{% set version = "1.4.2" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygenomeviz-{{ version }}.tar.gz
-  sha256: 5fc4778225b75e8908f5c2c9eab0c9b9b60404f87ac03c407f3587a4bb508dd9
+  sha256: 3465d1148fcfaa21ec1b34985aeacb8a81c6d7e4adc2537f654baeb4c5b365de
 
 build:
   entry_points:
